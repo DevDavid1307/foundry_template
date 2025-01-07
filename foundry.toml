@@ -3,5 +3,12 @@ src = "src"
 out = "out"
 libs = ["dependencies"]
 
+[etherscan]
+mainnet = { key = "${SCAN_KEY_ETH}", url = "${VERIFIER_ETH}" }
+sepolia = { key = "${SCAN_KEY_ETH}", url = "${VERIFIER_ETH_SEPOLIA}" }
+bsc-testnet = { key = "${SCAN_KEY_BSC}", url = "${VERIFIER_BSC_TESTNET}" }
+polygon = { key = "${SCAN_KEY_POLYGON}", url = "${VERIFIER_POLYGON}" }
+polygon-amoy = { key = "${SCAN_KEY_POLYGON}", url = "${VERIFIER_POLYGON_AMOY}" }
+
 [dependencies]
 forge-std = "1.9.4"
